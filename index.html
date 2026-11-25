@@ -1,0 +1,1693 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自愈抠桨mv在线看免费版 - 高清音画,沉浸式心灵疗愈影像</title>
+<meta name="description" content="自愈抠桨mv在线看免费版是专注于心灵疗愈影像的视频品牌官网，提供高清自愈系音乐影像在线观看、社区共创与会员内容，让每一次观看成为一次内在修复。">
+<style>
+/* ===================== 基础重置与变量 ===================== */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg-0:#07090d;
+  --bg-1:#0d1117;
+  --bg-2:#121a24;
+  --bg-3:#18232f;
+  --line:rgba(120,200,210,.14);
+  --line-2:rgba(120,200,210,.28);
+  --text:#e8f1f4;
+  --text-2:#9db3bd;
+  --text-3:#647d88;
+  --cyan:#4ee0d0;
+  --cyan-2:#2bb8ac;
+  --mint:#8dffd9;
+  --violet:#7b8cff;
+  --amber:#ffc762;
+  --coral:#ff8f7a;
+  --grad-main:linear-gradient(120deg,#4ee0d0 0%,#7b8cff 55%,#ff8f7a 100%);
+  --grad-soft:linear-gradient(140deg,rgba(78,224,208,.16),rgba(123,140,255,.08) 50%,rgba(255,143,122,.10));
+  --radius-s:10px;
+  --radius-m:18px;
+  --radius-l:28px;
+  --shadow-1:0 18px 50px -22px rgba(0,0,0,.85);
+  --shadow-2:0 30px 80px -30px rgba(78,224,208,.28);
+  --font-sans:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-mono:"SF Mono","JetBrains Mono","Cascadia Code",Consolas,monospace;
+  --ease:cubic-bezier(.22,.8,.28,1);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--font-sans);
+  background:var(--bg-0);
+  color:var(--text);
+  line-height:1.75;
+  overflow-x:hidden;
+  letter-spacing:.01em;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background:
+    radial-gradient(720px 520px at 8% -6%,rgba(78,224,208,.13),transparent 62%),
+    radial-gradient(820px 600px at 96% 8%,rgba(123,140,255,.13),transparent 60%),
+    radial-gradient(700px 700px at 50% 108%,rgba(255,143,122,.09),transparent 62%);
+}
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  opacity:.42;
+  background-image:
+    linear-gradient(rgba(120,200,210,.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(120,200,210,.05) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(circle at 50% 30%,#000 0%,transparent 82%);
+  -webkit-mask-image:radial-gradient(circle at 50% 30%,#000 0%,transparent 82%);
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul,ol{list-style:none}
+::selection{background:rgba(78,224,208,.32);color:#fff}
+
+/* 滚动条 */
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:#0a0f14}
+::-webkit-scrollbar-thumb{background:linear-gradient(#2bb8ac,#3a4a63);border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:linear-gradient(#4ee0d0,#5a6c8a)}
+
+/* ===================== 布局工具 ===================== */
+.wrap{width:min(1240px,calc(100% - 48px));margin-inline:auto;position:relative;z-index:2}
+.section{position:relative;padding:104px 0;z-index:2}
+.section--tight{padding:72px 0}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;flex-wrap:wrap;margin-bottom:52px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--font-mono);font-size:12px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--cyan);
+  padding:7px 14px;border:1px solid var(--line-2);border-radius:999px;
+  background:rgba(78,224,208,.06);
+}
+.eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan);animation:pulseDot 2.4s infinite}
+@keyframes pulseDot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.7)}}
+.section-title{font-size:clamp(26px,3.4vw,42px);font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-top:18px}
+.section-title em{font-style:normal;background:var(--grad-main);-webkit-background-clip:text;background-clip:text;color:transparent}
+.section-desc{max-width:520px;color:var(--text-2);font-size:15px;line-height:1.9}
+.text-grad{background:var(--grad-main);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* ===================== 导航 ===================== */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  transition:background .5s var(--ease),border-color .5s var(--ease),backdrop-filter .5s;
+  border-bottom:1px solid transparent;
+}
+.nav.is-scrolled{
+  background:rgba(7,9,13,.82);
+  backdrop-filter:blur(18px) saturate(150%);
+  -webkit-backdrop-filter:blur(18px) saturate(150%);
+  border-bottom-color:var(--line);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;height:76px}
+.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.brand-mark{
+  width:40px;height:40px;border-radius:13px;position:relative;overflow:hidden;
+  background:conic-gradient(from 200deg,#4ee0d0,#7b8cff,#ff8f7a,#4ee0d0);
+  display:grid;place-items:center;box-shadow:0 0 26px -6px rgba(78,224,208,.6);
+}
+.brand-mark::after{
+  content:"";position:absolute;inset:2px;border-radius:11px;background:#07090d;
+}
+.brand-mark svg{position:relative;z-index:1;width:22px;height:22px}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-name{font-size:16px;font-weight:800;letter-spacing:.02em}
+.brand-sub{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.28em;color:var(--text-3);text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{
+  position:relative;font-size:14px;color:var(--text-2);padding:9px 14px;border-radius:999px;
+  transition:color .3s,background .3s;
+}
+.nav-links a:hover{color:var(--text);background:rgba(255,255,255,.05)}
+.nav-actions{display:flex;align-items:center;gap:12px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:12px 24px;border-radius:999px;font-size:14px;font-weight:700;
+  transition:transform .35s var(--ease),box-shadow .35s,background .35s,color .35s,border-color .35s;
+  white-space:nowrap;
+}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--grad-main);color:#04100f;box-shadow:0 14px 34px -14px rgba(78,224,208,.75)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 20px 44px -14px rgba(78,224,208,.9)}
+.btn-ghost{border:1px solid var(--line-2);color:var(--text);background:rgba(255,255,255,.02)}
+.btn-ghost:hover{border-color:var(--cyan);color:var(--cyan);background:rgba(78,224,208,.07);transform:translateY(-2px)}
+.btn-sm{padding:9px 18px;font-size:13px}
+.nav-toggle{display:none;width:42px;height:42px;border-radius:12px;border:1px solid var(--line);place-items:center}
+.nav-toggle span{display:block;width:18px;height:1.8px;background:var(--text);border-radius:2px;position:relative;transition:.3s}
+.nav-toggle span::before,.nav-toggle span::after{content:"";position:absolute;left:0;width:18px;height:1.8px;background:var(--text);border-radius:2px;transition:.3s}
+.nav-toggle span::before{top:-6px}
+.nav-toggle span::after{top:6px}
+.nav-toggle.open span{background:transparent}
+.nav-toggle.open span::before{transform:translateY(6px) rotate(45deg)}
+.nav-toggle.open span::after{transform:translateY(-6px) rotate(-45deg)}
+
+/* ===================== 首屏 HERO ===================== */
+.hero{position:relative;padding:168px 0 96px;overflow:hidden;z-index:2}
+.hero-glow{
+  position:absolute;width:760px;height:760px;border-radius:50%;
+  filter:blur(120px);opacity:.5;pointer-events:none;z-index:1;
+}
+.hero-glow-1{top:-320px;left:-220px;background:radial-gradient(circle,rgba(78,224,208,.55),transparent 68%)}
+.hero-glow-2{top:40px;right:-280px;background:radial-gradient(circle,rgba(123,140,255,.5),transparent 68%)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:10px;padding:7px 8px 7px 7px;border-radius:999px;
+  background:rgba(255,255,255,.04);border:1px solid var(--line);font-size:12.5px;color:var(--text-2);
+  margin-bottom:26px;
+}
+.hero-badge b{
+  background:var(--grad-main);color:#04100f;font-weight:800;padding:4px 11px;border-radius:999px;font-size:11.5px;letter-spacing:.04em;
+}
+.hero h1{
+  font-size:clamp(38px,5.4vw,70px);line-height:1.08;font-weight:900;letter-spacing:-.035em;
+  margin-bottom:26px;
+}
+.hero h1 .line{display:block}
+.hero h1 .grad{background:var(--grad-main);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-lead{max-width:540px;color:var(--text-2);font-size:16.5px;line-height:1.95;margin-bottom:36px}
+.hero-lead strong{color:var(--text);font-weight:700}
+.hero-cta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:44px}
+.hero-stats{display:flex;gap:0;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:28px;max-width:560px}
+.stat{padding-right:36px;margin-right:36px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:none;margin-right:0;padding-right:0}
+.stat-num{font-family:var(--font-mono);font-size:26px;font-weight:700;letter-spacing:-.02em;line-height:1.2}
+.stat-num span{font-size:14px;color:var(--cyan);margin-left:2px}
+.stat-label{font-size:12px;color:var(--text-3);letter-spacing:.06em;margin-top:4px}
+
+/* 播放器卡片 */
+.player-card{
+  position:relative;border-radius:var(--radius-l);overflow:hidden;
+  background:linear-gradient(160deg,#101a22,#0a0e14);
+  border:1px solid var(--line-2);
+  box-shadow:var(--shadow-1),var(--shadow-2);
+  transform:perspective(1400px) rotateY(-4deg) rotateX(2deg);
+  transition:transform .8s var(--ease);
+}
+.player-card:hover{transform:perspective(1400px) rotateY(0) rotateX(0)}
+.player-screen{position:relative;aspect-ratio:16/10;background:#05080b;overflow:hidden}
+.player-screen svg{width:100%;height:100%}
+.player-scan{
+  position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(180deg,rgba(255,255,255,.028) 0 1px,transparent 1px 3px);
+  mix-blend-mode:overlay;
+}
+.player-vignette{
+  position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(circle at 50% 45%,transparent 30%,rgba(3,5,8,.72) 100%);
+}
+.player-play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:86px;height:86px;border-radius:50%;
+  background:rgba(78,224,208,.16);border:1.5px solid rgba(78,224,208,.6);
+  backdrop-filter:blur(8px);display:grid;place-items:center;
+  transition:.45s var(--ease);z-index:4;
+}
+.player-play::after{
+  content:"";position:absolute;inset:-10px;border-radius:50%;border:1px solid rgba(78,224,208,.28);
+  animation:ringPulse 2.8s ease-out infinite;
+}
+@keyframes ringPulse{0%{transform:scale(.86);opacity:.9}100%{transform:scale(1.35);opacity:0}}
+.player-play svg{width:26px;height:26px;margin-left:3px;fill:#d6fffa}
+.player-play:hover{background:rgba(78,224,208,.32);transform:translate(-50%,-50%) scale(1.08)}
+.player-top{
+  position:absolute;top:0;left:0;right:0;padding:16px 18px;z-index:3;
+  display:flex;align-items:center;justify-content:space-between;
+  background:linear-gradient(180deg,rgba(3,6,9,.85),transparent);
+}
+.player-pill{
+  display:inline-flex;align-items:center;gap:8px;font-size:11px;font-family:var(--font-mono);
+  letter-spacing:.14em;color:#bdf7f0;padding:5px 11px;border-radius:999px;
+  background:rgba(78,224,208,.14);border:1px solid rgba(78,224,208,.3);
+}
+.live-dot{width:7px;height:7px;border-radius:50%;background:#4ee0d0;box-shadow:0 0 10px #4ee0d0;animation:pulseDot 1.8s infinite}
+.player-bottom{
+  position:absolute;left:0;right:0;bottom:0;padding:16px 18px 18px;z-index:3;
+  background:linear-gradient(0deg,rgba(3,6,9,.92),transparent);
+}
+.player-progress{height:4px;border-radius:4px;background:rgba(255,255,255,.14);overflow:hidden;margin-bottom:12px}
+.player-progress i{display:block;height:100%;width:42%;border-radius:4px;background:var(--grad-main);box-shadow:0 0 14px rgba(78,224,208,.8);animation:progressSlide 6s linear infinite alternate}
+@keyframes progressSlide{0%{width:18%}100%{width:74%}}
+.player-meta{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.player-title{font-size:13.5px;font-weight:700}
+.player-time{font-family:var(--font-mono);font-size:11px;color:var(--text-2);letter-spacing:.06em}
+.player-foot{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:16px 20px;border-top:1px solid var(--line);background:rgba(255,255,255,.022);flex-wrap:wrap;
+}
+.player-tags{display:flex;gap:8px;flex-wrap:wrap}
+.tag{font-size:11px;font-family:var(--font-mono);letter-spacing:.08em;color:var(--text-2);padding:4px 10px;border:1px solid var(--line);border-radius:999px}
+.tag.hot{color:var(--amber);border-color:rgba(255,199,98,.35);background:rgba(255,199,98,.07)}
+.player-live{font-size:12px;color:var(--text-3)}
+.player-live b{color:var(--cyan)}
+
+/* 波形装饰 */
+.wave-strip{display:flex;align-items:flex-end;gap:3px;height:26px}
+.wave-strip i{display:block;width:3px;border-radius:2px;background:linear-gradient(180deg,var(--cyan),rgba(78,224,208,.18));animation:waveJump 1.4s ease-in-out infinite}
+@keyframes waveJump{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+
+/* ===================== 跑马灯 ===================== */
+.marquee{
+  position:relative;z-index:2;overflow:hidden;padding:20px 0;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:linear-gradient(90deg,rgba(78,224,208,.05),rgba(123,140,255,.05),rgba(255,143,122,.05));
+  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+}
+.marquee-track{display:flex;width:max-content;animation:scrollX 34s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes scrollX{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.marquee-item{
+  display:flex;align-items:center;gap:26px;padding-right:26px;
+  font-family:var(--font-mono);font-size:12.5px;letter-spacing:.2em;color:var(--text-3);white-space:nowrap;
+}
+.marquee-item::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--cyan);opacity:.7}
+.marquee-item b{color:var(--text);font-weight:600;letter-spacing:.12em}
+
+/* ===================== 内容精选 ===================== */
+.filter-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:40px}
+.filter-btn{
+  padding:9px 20px;border-radius:999px;font-size:13.5px;color:var(--text-2);
+  border:1px solid var(--line);transition:.3s var(--ease);background:rgba(255,255,255,.02);
+}
+.filter-btn:hover{color:var(--text);border-color:var(--line-2)}
+.filter-btn.active{background:var(--grad-main);color:#04100f;font-weight:800;border-color:transparent;box-shadow:0 10px 26px -12px rgba(78,224,208,.8)}
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.vcard{
+  position:relative;border-radius:var(--radius-m);overflow:hidden;
+  background:linear-gradient(165deg,rgba(24,35,47,.9),rgba(10,14,20,.95));
+  border:1px solid var(--line);
+  transition:transform .5s var(--ease),border-color .5s,box-shadow .5s;
+  display:flex;flex-direction:column;
+}
+.vcard:hover{transform:translateY(-8px);border-color:var(--line-2);box-shadow:0 28px 60px -30px rgba(78,224,208,.45)}
+.vcard-thumb{position:relative;aspect-ratio:16/10;overflow:hidden;background:#0a0f14}
+.vcard-thumb svg{width:100%;height:100%;transition:transform .8s var(--ease)}
+.vcard:hover .vcard-thumb svg{transform:scale(1.06)}
+.vcard-time{
+  position:absolute;right:10px;bottom:10px;font-family:var(--font-mono);font-size:10.5px;
+  padding:3px 8px;border-radius:6px;background:rgba(3,6,9,.82);color:#cfe6ea;letter-spacing:.06em;
+  border:1px solid rgba(255,255,255,.1);
+}
+.vcard-flag{
+  position:absolute;left:10px;top:10px;font-size:10.5px;font-family:var(--font-mono);letter-spacing:.1em;
+  padding:3px 9px;border-radius:999px;background:rgba(78,224,208,.16);color:#9df5ea;border:1px solid rgba(78,224,208,.34);
+}
+.vcard-flag.v2{background:rgba(123,140,255,.16);color:#c3caff;border-color:rgba(123,140,255,.34)}
+.vcard-flag.v3{background:rgba(255,199,98,.14);color:#ffdfa0;border-color:rgba(255,199,98,.34)}
+.vcard-body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.vcard-title{font-size:16px;font-weight:800;line-height:1.5;letter-spacing:-.01em}
+.vcard-desc{font-size:13px;color:var(--text-2);line-height:1.8;flex:1}
+.vcard-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;border-top:1px solid var(--line);font-size:12px;color:var(--text-3)}
+.vcard-foot .views{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-mono);letter-spacing:.04em}
+.vcard-foot .views svg{width:13px;height:13px;fill:var(--text-3)}
+.vcard-foot .cat{color:var(--cyan)}
+.more-wrap{display:flex;justify-content:center;margin-top:52px}
+
+/* ===================== 品牌理念 ===================== */
+.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:64px;align-items:center}
+.about-visual{position:relative;border-radius:var(--radius-l);overflow:hidden;border:1px solid var(--line-2);box-shadow:var(--shadow-1);background:#0a0f14}
+.about-visual svg{width:100%;height:auto}
+.about-float{
+  position:absolute;left:18px;bottom:18px;right:18px;
+  padding:16px 18px;border-radius:16px;
+  background:rgba(7,11,15,.78);backdrop-filter:blur(14px);
+  border:1px solid var(--line-2);
+  display:flex;align-items:center;gap:14px;
+}
+.about-float .ico{width:38px;height:38px;border-radius:11px;background:var(--grad-soft);border:1px solid var(--line-2);display:grid;place-items:center;flex-shrink:0}
+.about-float .ico svg{width:19px;height:19px;fill:var(--cyan)}
+.about-float strong{display:block;font-size:13.5px;margin-bottom:2px}
+.about-float span{font-size:11.5px;color:var(--text-3)}
+.about-copy h2{margin-bottom:20px}
+.about-copy p{color:var(--text-2);font-size:15px;line-height:1.95;margin-bottom:18px}
+.about-copy p strong{color:var(--text);font-weight:700}
+.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:32px}
+.feature-item{
+  padding:18px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.022);
+  transition:.4s var(--ease);
+}
+.feature-item:hover{border-color:var(--line-2);background:rgba(78,224,208,.05);transform:translateY(-3px)}
+.feature-item .fi-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.feature-item .fi-ico{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:var(--grad-soft);border:1px solid var(--line)}
+.feature-item .fi-ico svg{width:15px;height:15px;fill:var(--cyan)}
+.feature-item h4{font-size:13.5px;font-weight:800}
+.feature-item p{font-size:12px;color:var(--text-3);line-height:1.75;margin:0}
+
+/* ===================== 数据统计条 ===================== */
+.metrics{
+  position:relative;z-index:2;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:linear-gradient(180deg,rgba(78,224,208,.045),transparent);
+  padding:56px 0;
+}
+.metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.metric{text-align:center;position:relative}
+.metric:not(:last-child)::after{content:"";position:absolute;right:0;top:50%;transform:translateY(-50%);width:1px;height:52px;background:var(--line)}
+.metric-num{font-family:var(--font-mono);font-size:clamp(28px,3.6vw,44px);font-weight:700;letter-spacing:-.03em;line-height:1.15}
+.metric-num em{font-style:normal;font-size:.5em;color:var(--cyan);margin-left:4px;font-weight:600}
+.metric-label{font-size:12.5px;color:var(--text-3);letter-spacing:.08em;margin-top:8px}
+
+/* ===================== 社区活力 ===================== */
+.community-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:24px}
+.panel{
+  border-radius:var(--radius-m);border:1px solid var(--line);
+  background:linear-gradient(165deg,rgba(24,35,47,.78),rgba(10,14,20,.92));
+  padding:28px;position:relative;overflow:hidden;
+}
+.panel-title{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px}
+.panel-title h3{font-size:16.5px;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.panel-title h3::before{content:"";width:4px;height:16px;border-radius:3px;background:var(--grad-main)}
+.panel-title .link{font-size:12.5px;color:var(--cyan);display:inline-flex;align-items:center;gap:5px;transition:gap .3s}
+.panel-title .link:hover{gap:10px}
+.panel-title .link svg{width:13px;height:13px;fill:var(--cyan)}
+.topic-list{display:flex;flex-direction:column;gap:4px}
+.topic-item{
+  display:flex;align-items:center;gap:14px;padding:13px 12px;border-radius:12px;
+  transition:.3s var(--ease);border:1px solid transparent;
+}
+.topic-item:hover{background:rgba(78,224,208,.06);border-color:var(--line)}
+.topic-rank{font-family:var(--font-mono);font-size:12px;color:var(--text-3);width:22px;flex-shrink:0}
+.topic-item:nth-child(1) .topic-rank,.topic-item:nth-child(2) .topic-rank,.topic-item:nth-child(3) .topic-rank{color:var(--amber);font-weight:700}
+.topic-main{flex:1;min-width:0}
+.topic-main h4{font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:2px}
+.topic-main p{font-size:11.5px;color:var(--text-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.topic-heat{font-family:var(--font-mono);font-size:11px;color:var(--text-3);flex-shrink:0;display:flex;align-items:center;gap:5px}
+.topic-heat i{width:5px;height:5px;border-radius:50%;background:var(--coral);box-shadow:0 0 8px var(--coral)}
+
+.comment-list{display:flex;flex-direction:column;gap:16px;max-height:352px;overflow-y:auto;padding-right:6px;scrollbar-width:thin}
+.comment-list::-webkit-scrollbar{width:4px}
+.comment-list::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:4px}
+.comment{display:flex;gap:12px}
+.avatar{
+  width:38px;height:38px;border-radius:12px;flex-shrink:0;display:grid;place-items:center;
+  font-weight:800;font-size:14px;color:#04100f;position:relative;
+}
+.avatar.a1{background:linear-gradient(135deg,#4ee0d0,#2bb8ac)}
+.avatar.a2{background:linear-gradient(135deg,#7b8cff,#5a6bd8);color:#f0f2ff}
+.avatar.a3{background:linear-gradient(135deg,#ffc762,#e0a63b)}
+.avatar.a4{background:linear-gradient(135deg,#ff8f7a,#dd6a55);color:#2a0d08}
+.avatar.a5{background:linear-gradient(135deg,#8dffd9,#4ec4a8)}
+.comment-body{flex:1;min-width:0}
+.comment-head{display:flex;align-items:center;gap:8px;margin-bottom:3px;flex-wrap:wrap}
+.comment-head b{font-size:12.5px}
+.comment-head span{font-size:10.5px;color:var(--text-3);font-family:var(--font-mono)}
+.comment-body p{font-size:12.5px;color:var(--text-2);line-height:1.75}
+.comment-body p em{font-style:normal;color:var(--cyan)}
+.like-btn{display:inline-flex;align-items:center;gap:4px;font-family:var(--font-mono);font-size:10.5px;color:var(--text-3);margin-top:6px;transition:color .3s}
+.like-btn svg{width:12px;height:12px;fill:currentColor;transition:transform .3s var(--ease)}
+.like-btn:hover{color:var(--coral)}
+.like-btn.liked{color:var(--coral)}
+.like-btn.liked svg{transform:scale(1.18)}
+
+/* ===================== 会员套餐 ===================== */
+.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
+.plan{
+  position:relative;border-radius:var(--radius-m);padding:32px 28px;
+  border:1px solid var(--line);background:linear-gradient(170deg,rgba(24,35,47,.82),rgba(10,14,20,.94));
+  display:flex;flex-direction:column;transition:.45s var(--ease);
+}
+.plan:hover{transform:translateY(-6px);border-color:var(--line-2)}
+.plan.featured{
+  border-color:rgba(78,224,208,.42);
+  background:
+    linear-gradient(170deg,rgba(78,224,208,.1),rgba(24,35,47,.9) 40%,rgba(10,14,20,.96));
+  box-shadow:0 30px 70px -34px rgba(78,224,208,.55);
+}
+.plan-badge{
+  position:absolute;top:-12px;right:24px;font-size:10.5px;font-family:var(--font-mono);
+  letter-spacing:.14em;padding:5px 12px;border-radius:999px;
+  background:var(--grad-main);color:#04100f;font-weight:800;
+}
+.plan h3{font-size:17px;font-weight:800;margin-bottom:6px}
+.plan .plan-sub{font-size:12.5px;color:var(--text-3);margin-bottom:24px}
+.plan-price{display:flex;align-items:flex-end;gap:6px;margin-bottom:6px}
+.plan-price .cur{font-size:16px;color:var(--text-2);font-weight:700;margin-bottom:8px}
+.plan-price .num{font-family:var(--font-mono);font-size:42px;font-weight:700;letter-spacing:-.04em;line-height:1}
+.plan-price .unit{font-size:12.5px;color:var(--text-3);margin-bottom:8px}
+.plan-note{font-size:11.5px;color:var(--text-3);margin-bottom:24px}
+.plan ul{display:flex;flex-direction:column;gap:12px;margin-bottom:28px;flex:1}
+.plan li{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:var(--text-2);line-height:1.6}
+.plan li svg{width:15px;height:15px;fill:var(--cyan);flex-shrink:0;margin-top:3px}
+.plan .btn{width:100%}
+
+/* ===================== 常见问题 ===================== */
+.faq-list{max-width:860px;margin-inline:auto;display:flex;flex-direction:column;gap:12px}
+.faq-item{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:rgba(255,255,255,.022);transition:.4s var(--ease)}
+.faq-item.open{border-color:var(--line-2);background:rgba(78,224,208,.045)}
+.faq-q{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;
+  padding:20px 22px;text-align:left;font-size:14.5px;font-weight:700;letter-spacing:-.01em;
+}
+.faq-q .ico{width:24px;height:24px;border-radius:8px;border:1px solid var(--line-2);display:grid;place-items:center;flex-shrink:0;transition:.4s var(--ease)}
+.faq-q .ico svg{width:11px;height:11px;fill:var(--cyan);transition:.4s var(--ease)}
+.faq-item.open .faq-q .ico{background:var(--grad-main);border-color:transparent}
+.faq-item.open .faq-q .ico svg{fill:#04100f;transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
+.faq-a p{padding:0 22px 22px;font-size:13.5px;color:var(--text-2);line-height:1.95}
+
+/* ===================== CTA 横幅 ===================== */
+.cta-banner{
+  position:relative;overflow:hidden;border-radius:var(--radius-l);
+  padding:64px 56px;text-align:center;
+  background:
+    radial-gradient(600px 300px at 20% 0%,rgba(78,224,208,.2),transparent 62%),
+    radial-gradient(560px 320px at 85% 100%,rgba(123,140,255,.18),transparent 62%),
+    linear-gradient(160deg,#101a24,#0a0e14);
+  border:1px solid var(--line-2);
+  box-shadow:var(--shadow-1);
+}
+.cta-banner::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(120,200,210,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(120,200,210,.06) 1px,transparent 1px);
+  background-size:40px 40px;
+  mask-image:radial-gradient(circle at 50% 50%,#000,transparent 78%);
+  -webkit-mask-image:radial-gradient(circle at 50% 50%,#000,transparent 78%);
+}
+.cta-banner h2{font-size:clamp(24px,3.2vw,36px);font-weight:900;letter-spacing:-.025em;line-height:1.3;margin-bottom:16px;position:relative}
+.cta-banner p{color:var(--text-2);font-size:14.5px;max-width:560px;margin:0 auto 32px;position:relative;line-height:1.9}
+.cta-banner .hero-cta{justify-content:center;margin-bottom:0;position:relative}
+
+/* ===================== 页脚 ===================== */
+.footer{position:relative;z-index:2;border-top:1px solid var(--line);padding:64px 0 32px;margin-top:32px}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;margin-bottom:52px}
+.footer-brand p{font-size:13px;color:var(--text-3);line-height:1.9;margin:18px 0 22px;max-width:300px}
+.footer-social{display:flex;gap:10px}
+.footer-social a{
+  width:36px;height:36px;border-radius:10px;border:1px solid var(--line);display:grid;place-items:center;
+  transition:.35s var(--ease);
+}
+.footer-social a svg{width:15px;height:15px;fill:var(--text-2);transition:.35s}
+.footer-social a:hover{border-color:var(--cyan);background:rgba(78,224,208,.1);transform:translateY(-3px)}
+.footer-social a:hover svg{fill:var(--cyan)}
+.footer-col h4{font-size:13px;font-weight:800;letter-spacing:.06em;margin-bottom:18px;color:var(--text)}
+.footer-col ul{display:flex;flex-direction:column;gap:11px}
+.footer-col a{font-size:12.5px;color:var(--text-3);transition:.3s}
+.footer-col a:hover{color:var(--cyan)}
+.footer-bottom{
+  display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  padding-top:28px;border-top:1px solid var(--line);font-size:12px;color:var(--text-3);
+}
+.footer-bottom .links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-bottom .links a:hover{color:var(--text-2)}
+.footer-bottom .mono{font-family:var(--font-mono);letter-spacing:.08em}
+
+/* ===================== 动画 ===================== */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.1s}
+.reveal.d2{transition-delay:.2s}
+.reveal.d3{transition-delay:.3s}
+.reveal.d4{transition-delay:.4s}
+
+/* 顶部进度条 */
+.scroll-progress{position:fixed;top:0;left:0;height:2px;width:0;z-index:200;background:var(--grad-main);box-shadow:0 0 12px rgba(78,224,208,.8);transition:width .1s linear}
+
+/* ===================== 响应式 ===================== */
+@media (max-width:1080px){
+  .hero-grid{grid-template-columns:1fr;gap:48px}
+  .player-card{transform:none}
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .community-grid{grid-template-columns:1fr}
+  .metrics-grid{grid-template-columns:repeat(2,1fr);gap:36px}
+  .metric:nth-child(2)::after{display:none}
+  .card-grid{grid-template-columns:repeat(2,1fr)}
+  .plan-grid{grid-template-columns:1fr;max-width:520px;margin-inline:auto}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .nav-links{display:none}
+  .nav-actions .btn-ghost{display:none}
+  .nav-toggle{display:grid}
+  .nav.is-open .nav-links{
+    display:flex;flex-direction:column;align-items:stretch;gap:2px;
+    position:absolute;top:76px;left:16px;right:16px;
+    padding:14px;border-radius:18px;
+    background:rgba(9,13,18,.97);backdrop-filter:blur(20px);
+    border:1px solid var(--line-2);box-shadow:var(--shadow-1);
+  }
+  .nav.is-open .nav-links a{padding:13px 16px;font-size:14.5px;border-radius:12px}
+  .hero{padding:132px 0 72px}
+  .section{padding:76px 0}
+  .section-head{margin-bottom:36px}
+  .cta-banner{padding:44px 26px}
+  .feature-list{grid-template-columns:1fr}
+  .metrics-grid{grid-template-columns:1fr;gap:26px}
+  .metric::after{display:none}
+  .metric{padding-bottom:22px;border-bottom:1px solid var(--line)}
+  .metric:last-child{border-bottom:none;padding-bottom:0}
+}
+@media (max-width:620px){
+  .wrap{width:calc(100% - 32px)}
+  .card-grid{grid-template-columns:1fr}
+  .hero-stats{gap:0;flex-direction:column;border-top:1px solid var(--line)}
+  .stat{border-right:none;margin-right:0;padding:14px 0;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+  .stat:last-child{border-bottom:none}
+  .stat-label{margin-top:0}
+  .footer-grid{grid-template-columns:1fr;gap:34px}
+  .footer-bottom{flex-direction:column;align-items:flex-start;gap:14px}
+  .hero-badge{font-size:11.5px}
+  .panel{padding:20px}
+  .plan{padding:26px 22px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ 导航 ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand" aria-label="自愈抠桨mv在线看免费版 首页">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2.4c2.6 3.2 6.2 5.4 6.2 9.6A6.2 6.2 0 0 1 12 18.2a6.2 6.2 0 0 1-6.2-6.2c0-4.2 3.6-6.4 6.2-9.6Z" fill="#4ee0d0"/>
+          <path d="M12 21.6v-3.4" stroke="#8dffd9" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">自愈抠桨 MV</span>
+        <span class="brand-sub">Healing Frames</span>
+      </span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#top">首页</a>
+      <a href="#library">影像库</a>
+      <a href="#about">品牌理念</a>
+      <a href="#community">社区</a>
+      <a href="#plans">会员</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#library" class="btn btn-ghost btn-sm">免费试看</a>
+      <a href="#plans" class="btn btn-primary btn-sm">
+        立即观看
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-glow hero-glow-1"></div>
+  <div class="hero-glow hero-glow-2"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="hero-badge"><b>全新上线</b> 高清音画 · 沉浸疗愈影像季</span>
+        <h1>
+          <span class="line">自愈抠桨mv</span>
+          <span class="line grad">在线看免费版</span>
+        </h1>
+        <p class="hero-lead">
+          <strong>自愈抠桨mv在线看免费版</strong> 是一个专注心灵修复与情绪疗愈的视频品牌。我们把自然声场、极简运镜与慢节奏叙事缝合在一起，让每一段影像都成为一次深呼吸——无需注册，随时随地，打开即看。
+        </p>
+        <div class="hero-cta">
+          <a href="#library" class="btn btn-primary">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            免费观看全集
+          </a>
+          <a href="#about" class="btn btn-ghost">了解品牌</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num" data-count="1280">0<span>+</span></div>
+            <div class="stat-label">疗愈影像作品</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-count="96">0<span>万</span></div>
+            <div class="stat-label">累计观看人次</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-count="4.9">0<span>分</span></div>
+            <div class="stat-label">社区真实评分</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="player-card reveal">
+        <div class="player-screen">
+          <svg viewBox="0 0 640 400" role="img" aria-label="自愈抠桨mv在线看免费版 播放画面">
+            <defs>
+              <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#0f2b33"/>
+                <stop offset="46%" stop-color="#13313a"/>
+                <stop offset="100%" stop-color="#081014"/>
+              </linearGradient>
+              <linearGradient id="waterGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#1a4a52"/>
+                <stop offset="100%" stop-color="#071216"/>
+              </linearGradient>
+              <linearGradient id="sunGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#bdf7f0"/>
+                <stop offset="100%" stop-color="#4ee0d0"/>
+              </linearGradient>
+              <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#4ee0d0" stop-opacity=".55"/>
+                <stop offset="100%" stop-color="#4ee0d0" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="mtGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#1d3b46"/>
+                <stop offset="100%" stop-color="#0c1a20"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="400" fill="url(#skyGrad)"/>
+            <!-- 远山 -->
+            <path d="M0 208 L92 150 L164 196 L238 132 L320 194 L404 142 L486 200 L566 154 L640 204 L640 260 L0 260 Z" fill="url(#mtGrad)" opacity=".85"/>
+            <!-- 日轮 -->
+            <circle cx="452" cy="146" r="72" fill="url(#glowGrad)"/>
+            <circle cx="452" cy="146" r="30" fill="url(#sunGrad)" opacity=".92"/>
+            <circle cx="452" cy="146" r="46" fill="none" stroke="#4ee0d0" stroke-opacity=".28" stroke-width="1"/>
+            <!-- 水面 -->
+            <rect x="0" y="252" width="640" height="148" fill="url(#waterGrad)"/>
+            <!-- 水面反光 -->
+            <g stroke="#4ee0d0" stroke-linecap="round">
+              <line x1="420" y1="272" x2="484" y2="272" stroke-opacity=".5" stroke-width="2"/>
+              <line x1="404" y1="286" x2="500" y2="286" stroke-opacity=".34" stroke-width="2"/>
+              <line x1="388" y1="300" x2="516" y2="300" stroke-opacity=".22" stroke-width="2"/>
+              <line x1="372" y1="314" x2="532" y2="314" stroke-opacity=".14" stroke-width="2"/>
+              <line x1="356" y1="328" x2="548" y2="328" stroke-opacity=".09" stroke-width="2"/>
+            </g>
+            <!-- 桨舟 -->
+            <g>
+              <path d="M150 330 q44 22 92 0 q-10 16 -46 16 q-36 0 -46 -16 Z" fill="#0d2026" stroke="#2bb8ac" stroke-opacity=".55" stroke-width="1.2"/>
+              <line x1="196" y1="330" x2="196" y2="286" stroke="#8dffd9" stroke-opacity=".8" stroke-width="2" stroke-linecap="round"/>
+              <path d="M180 246 q16 -16 34 0 q-18 20 -34 0 Z" fill="#4ee0d0" fill-opacity=".8"/>
+              <line x1="160" y1="304" x2="232" y2="352" stroke="#e8f1f4" stroke-opacity=".65" stroke-width="2.4" stroke-linecap="round"/>
+              <ellipse cx="240" cy="356" rx="26" ry="5" fill="#4ee0d0" opacity=".18"/>
+            </g>
+            <!-- 飞鸟 -->
+            <g stroke="#bdf7f0" stroke-opacity=".55" stroke-width="1.6" fill="none" stroke-linecap="round">
+              <path d="M96 96 q8 -8 16 0 q8 -8 16 0"/>
+              <path d="M146 74 q6 -6 12 0 q6 -6 12 0"/>
+              <path d="M78 126 q5 -5 10 0 q5 -5 10 0"/>
+            </g>
+            <!-- 星点 -->
+            <g fill="#bdf7f0" opacity=".5">
+              <circle cx="62" cy="42" r="1.4"/>
+              <circle cx="128" cy="28" r="1"/>
+              <circle cx="228" cy="52" r="1.2"/>
+              <circle cx="324" cy="34" r="1"/>
+              <circle cx="540" cy="56" r="1.3"/>
+              <circle cx="592" cy="96" r="1"/>
+            </g>
+          </svg>
+          <div class="player-scan"></div>
+          <div class="player-vignette"></div>
+          <div class="player-top">
+            <span class="player-pill"><i class="live-dot"></i> HEALING STREAM</span>
+            <div class="wave-strip" aria-hidden="true">
+              <i style="height:60%;animation-delay:0s"></i>
+              <i style="height:100%;animation-delay:.12s"></i>
+              <i style="height:45%;animation-delay:.24s"></i>
+              <i style="height:80%;animation-delay:.36s"></i>
+              <i style="height:35%;animation-delay:.48s"></i>
+              <i style="height:95%;animation-delay:.6s"></i>
+              <i style="height:55%;animation-delay:.72s"></i>
+              <i style="height:75%;animation-delay:.84s"></i>
+            </div>
+          </div>
+          <button class="player-play" aria-label="播放预览">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <div class="player-bottom">
+            <div class="player-progress"><i></i></div>
+            <div class="player-meta">
+              <span class="player-title">《桨声入静》· 第 01 集</span>
+              <span class="player-time">03:24 / 08:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="player-foot">
+          <div class="player-tags">
+            <span class="tag hot">FREE</span>
+            <span class="tag">4K</span>
+            <span class="tag">无损音频</span>
+            <span class="tag">无广告</span>
+          </div>
+          <span class="player-live">当前在线 <b>2,418</b> 人</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 跑马灯 ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack">
+    <span class="marquee-item"><b>自愈抠桨mv</b> 在线看免费版</span>
+    <span class="marquee-item">高清音画同步</span>
+    <span class="marquee-item"><b>沉浸式</b> 心灵疗愈</span>
+    <span class="marquee-item">自然声场采集</span>
+    <span class="marquee-item"><b>无广告</b> 纯净观看</span>
+    <span class="marquee-item">社区共创影像</span>
+    <span class="marquee-item"><b>每周更新</b> 新片速递</span>
+    <span class="marquee-item">慢节奏叙事</span>
+    <span class="marquee-item"><b>会员</b> 独享 4K 片源</span>
+    <span class="marquee-item">情绪修复计划</span>
+  </div>
+</div>
+
+<!-- ============ 影像库 ============ -->
+<section class="section" id="library">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Curated Library</span>
+        <h2 class="section-title">影像精选 <em>· 每一帧都在呼吸</em></h2>
+      </div>
+      <p class="section-desc">从水面桨声到林间晨雾，从深夜呼吸练习到城市天台观星，这里收录了不同场景下的疗愈影像，全部支持免费在线观看。</p>
+    </div>
+
+    <div class="filter-bar reveal" id="filterBar">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="nature">自然疗愈</button>
+      <button class="filter-btn" data-filter="breath">呼吸冥想</button>
+      <button class="filter-btn" data-filter="city">城市夜行</button>
+      <button class="filter-btn" data-filter="create">社区共创</button>
+    </div>
+
+    <div class="card-grid" id="cardGrid">
+      <!-- 1 -->
+      <article class="vcard reveal" data-cat="nature">
+        <div class="vcard-thumb">
+          <svg viewBox="0 0 400 250" role="img" aria-label="桨声入静 封面">
+            <defs>
+              <linearGradient id="c1a" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#123039"/><stop offset="100%" stop-color="#071014"/></linearGradient>
+              <linearGradient id="c1b" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1c5058"/><stop offset="100%" stop-color="#0a1a1f"/></linearGradient>
+            </defs>
+            <rect width="400" height="250" fill="url(#c1a)"/>
+            <path d="M0 132 L70 96 L128 128 L196 84 L262 126 L330 90 L400 130 L400 168 L0 168 Z" fill="#16333c"/>
+            <circle cx="292" cy="92" r="26" fill="#4ee0d0" opacity=".8"/>
+            <circle cx="292" cy="92" r="42" fill="none" stroke="#4ee0d0" stroke-opacity=".24"/>
+            <rect x="0" y="160" width="400" height="90" fill="url(#c1b)"/>
+            <g stroke="#4ee0d0" stroke-linecap="round" stroke-width="2">
+              <line x1="270" y1="176" x2="316" y2="176" stroke-opacity=".5"/>
+              <line x1="258" y1="188" x2="328" y2="188" stroke-opacity=".32"/>
+              <line x1="246" y1="200" x2="340" y2="200" stroke-opacity=".2"/>
+            </g>
+            <path d="M86 206 q30 14 62 0 q-7 12 -31 12 q-24 0 -31 -12 Z" fill="#0b1a1e" stroke="#2bb8ac" stroke-opacity=".6"/>
+            <line x1="118" y1="206" x2="118" y2="176" stroke="#8dffd9" stroke-opacity=".8" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="88" y1="188" x2="146" y2="222" stroke="#e8f1f4" stroke-opacity=".6" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="vcard-flag">免费</span>
+          <span class="vcard-time">08:00</span>
+        </div>
+        <div class="vcard-body">
+          <h3 class="vcard-title">桨声入静 · 第 01 集</h3>
+          <p class="vcard-desc">清晨湖面，一桨一划。收录真实水声与远山回响，适合早晨唤醒与深度专注。</p>
+          <div class="vcard-foot">
+            <span class="cat">自然疗愈</span>
+            <span class="views"><svg viewBox="0 0 24 24"><path d="M12 5c-5 0-9 4.5-9 7s4 7 9 7 9-4.5 9-7-4-7-9-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg>32.8万</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="vcard reveal d1" data-cat="breath">
+        <div class="vcard-thumb">
+          <svg viewBox="0 0 400 250" role="img" aria-label="呼吸练习 封面">
+            <defs>
+              <radialGradient id="c2a" cx="50%" cy="45%" r="60%">
+                <stop offset="0%" stop-color="#232a55"/><stop offset="60%" stop-color="#121736"/><stop offset="100%" stop-color="#080b18"/>
+              </radialGradient>
+            </defs>
+            <rect width="400" height="250" fill="url(#c2a)"/>
+            <g fill="none" stroke="#7b8cff">
+              <circle cx="200" cy="118" r="34" stroke-opacity=".85" stroke-width="1.6"/>
+              <circle cx="200" cy="118" r="52" stroke-opacity=".45" stroke-width="1.2"/>
+              <circle cx="200" cy="118" r="72" stroke-opacity=".25" stroke-width="1"/>
+              <circle cx="200" cy="118" r="94" stroke-opacity=".13" stroke-width="1"/>
+            </g>
+            <circle cx="200" cy="118" r="20" fill="#7b8cff" opacity=".55"/>
+            <circle cx="200" cy="118" r="9" fill="#c3caff"/>
+            <g fill="#c3caff" opacity=".5">
+              <circle cx="72" cy="52" r="1.4"/><circle cx="330" cy="44" r="1.1"/><circle cx="298" cy="206" r="1.3"/><circle cx="92" cy="212" r="1"/>
+            </g>
+            <path d="M0 214 q50 -18 100 0 t100 0 t100 0 t100 0" fill="none" stroke="#7b8cff" stroke-opacity=".3" stroke-width="1.4"/>
+          </svg>
+          <span class="vcard-flag v2">冥想</span>
+          <span class="vcard-time">12:00</span>
+        </div>
+        <div class="vcard-body">
+          <h3 class="vcard-title">四次呼吸 · 睡前引导</h3>
+          <p class="vcard-desc">4-7-8 呼吸法可视化引导，柔和提示音伴随，帮助你在十分钟内放松入睡。</p>
+          <div class="vcard-foot">
+            <span class="cat">呼吸冥想</span>
+            <span class="views"><svg viewBox="0 0 24 24"><path d="M12 5c-5 0-9 4.5-9 7s4 7 9 7 9-4.5 9-7-4-7-9-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg>47.1万</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="vcard reveal d2" data-cat="city">
+        <div class="vcard-thumb">
+          <svg viewBox="0 0 400 250" role="img" aria-label="城市夜行 封面">
+            <defs>
+              <linearGradient id="c3a" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1b1430"/><stop offset="100%" stop-color="#08060f"/></linearGradient>
+            </defs>
+            <rect width="400" height="250" fill="url(#c3a)"/>
+            <circle cx="318" cy="62" r="20" fill="#ffc762" opacity=".8"/>
+            <circle cx="318" cy="62" r="34" fill="none" stroke="#ffc762" stroke-opacity=".22"/>
+            <g fill="#12182c">
+              <rect x="0" y="140" width="52" height="110"/>
+              <rect x="58" y="112" width="44" height="138"/>
+              <rect x="108" y="158" width="60" height="92"/>
+              <rect x="174" y="96" width="46" height="154"/>
+              <rect x="226" y="150" width="54" height="100"/>
+              <rect x="286" y="122" width="42" height="128"/>
+              <rect x="334" y="166" width="66" height="84"/>
+            </g>
+            <g fill="#ffc762" opacity=".65">
+              <rect x="14" y="152" width="5" height="6"/><rect x="28" y="168" width="5" height="6"/><rect x="14" y="186" width="5" height="6"/>
+              <rect x="68" y="126" width="5" height="6"/><rect x="84" y="146" width="5" height="6"/><rect x="68" y="168" width="5" height="6"/>
+              <rect x="186" y="112" width="5" height="6"/><rect x="202" y="132" width="5" height="6"/><rect x="186" y="156" width="5" height="6"/>
+              <rect x="238" y="166" width="5" height="6"/><rect x="256" y="184" width="5" height="6"/>
+              <rect x="298" y="138" width="5" height="6"/><rect x="312" y="158" width="5" height="6"/>
+            </g>
+            <g fill="#4ee0d0" opacity=".55">
+              <rect x="30" y="210" width="5" height="6"/><rect x="80" y="196" width="5" height="6"/><rect x="196" y="186" width="5" height="6"/><rect x="250" y="210" width="5" height="6"/><rect x="350" y="200" width="5" height="6"/>
+            </g>
+            <path d="M0 236 h400" stroke="#7b8cff" stroke-opacity=".35" stroke-width="1.4"/>
+          </svg>
+          <span class="vcard-flag v3">热门</span>
+          <span class="vcard-time">10:15</span>
+        </div>
+        <div class="vcard-body">
+          <h3 class="vcard-title">城市夜行 · 天台观星</h3>
+          <p class="vcard-desc">在钢铁森林里寻找安静。城市灯光与夜空同框，适合加班后的十分钟放空。</p>
+          <div class="vcard-foot">
+            <span class="cat">城市夜行</span>
+            <span class="views"><svg viewBox="0 0 24 24"><path d="M12 5c-5 0-9 4.5-9 7s4 7 9 7 9-4.5 9-7-4-7-9-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg>28.5万</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="vcard reveal" data-cat="nature">
+        <div class="vcard-thumb">
+          <svg viewBox="0 0 400 250" role="img" aria-label="林间晨雾 封面">
+            <defs>
+              <linearGradient id="c4a" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#123026"/><stop offset="100%" stop-color="#06100c"/></linearGradient>
+            </defs>
+            <rect width="400" height="250" fill="url(#c4a)"/>
+            <g fill="#1a3f32" opacity=".9">
+              <path d="M56 200 L74 118 L92 200 Z"/><path d="M48 200 L74 152 L100 200 Z"/>
+              <path d="M120 200 L140 100 L160 200 Z"/><path d="M110 200 L140 142 L170 200 Z"/>
+              <path d="M238 200 L258 92 L278 200 Z"/><path d="M228 200 L258 136 L288 200 Z"/>
+              <path d="M320 200 L340 110 L360 200 Z"/><path d="M310 200 L340 150 L370 200 Z"/>
+            </g>
+            <g stroke="#2bb8ac" stroke-width="2.4" stroke-linecap="round" opacity=".7">
+              <line x1="74" y1="200" x2="74" y2="222"/><line x1="140" y1="200" x2="140" y2="224"/>
+              <line x1="258" y1="200" x2="258" y2="222"/><line x1="340" y1="200" x2="340" y2="224"/>
+            </g>
+            <g fill="#bdf7f0" opacity=".16">
+              <ellipse cx="200" cy="206" rx="180" ry="14"/>
+              <ellipse cx="120" cy="184" rx="110" ry="9"/>
+              <ellipse cx="292" cy="176" rx="98" ry="8"/>
+            </g>
+            <path d="M0 226 h400" stroke="#4ee0d0" stroke-opacity=".3" stroke-width="1.2"/>
+          </svg>
+          <span class="vcard-flag">免费</span>
+          <span class="vcard-time">09:30</span>
+        </div>
+        <div class="vcard-body">
+          <h3 class="vcard-title">林间晨雾 · 慢行记录</h3>
+          <p class="vcard-desc">雾气穿过松针的声音被完整收录，搭配极低亮度画面，适合长时间陪伴式播放。</p>
+          <div class="vcard-foot">
+            <span class="cat">自然疗愈</span>
+            <span class="views"><svg viewBox="0 0 24 24"><path d="M12 5c-5 0-9 4.5-9 7s4 7 9 7 9-4.5 9-7-4-7-9-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg>19.6万</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="vcard reveal d1" data-cat="create">
+        <div class="vcard-thumb">
+          <svg viewBox="0 0 400 250" role="img" aria-label="社区共创 封面">
+            <defs>
+              <linearGradient id="c5a" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2a1730"/><stop offset="50%" stop-color="#151024"/><stop offset="100%" stop-color="#08060f"/></linearGradient>
+            </defs>
+            <rect width="400" height="250" fill="url(#c5a)"/>
+            <g transform="translate(200 118)">
+              <g fill="none" stroke="#ff8f7a" stroke-opacity=".5">
+                <circle r="42" stroke-width="1.2"/><circle r="64" stroke-width="1"/><circle r="86" stroke-width=".8"/>
+              </g>
+              <g fill="#ff8f7a">
+                <circle cx="-64" cy="-26" r="4"/><circle cx="58" cy="-40" r="3.4"/>
+                <circle cx="70" cy="38" r="4.4"/><circle cx="-52" cy="52" r="3"/>
+                <circle cx="0" cy="-78" r="3.2"/><circle cx="-82" cy="10" r="3"/>
+              </g>
+              <circle r="24" fill="#ff8f7a" opacity=".28"/>
+              <circle r="13" fill="#ffc3b6"/>
+            </g>
+            <g stroke="#ff8f7a" stroke-opacity=".25" stroke-width="1">
+              <line x1="136" y1="92" x2="200" y2="118"/><line x1="258" y1="78" x2="200" y2="118"/>
+              <line x1="270" y1="156" x2="200" y2="118"/><line x1="148" y1="170" x2="200" y2="118"/>
+            </g>
+            <g fill="#bdf7f0" opacity=".4"><circle cx="46" cy="42" r="1.3"/><circle cx="356" cy="196" r="1.3"/></g>
+          </svg>
+          <span class="vcard-flag v2">共创</span>
+          <span class="vcard-time">06:48</span>
+        </div>
+        <div class="vcard-body">
+          <h3 class="vcard-title">我的自愈瞬间 · 合集</h3>
+          <p class="vcard-desc">由 1,842 位社区成员投稿的短片合集，每段不超过 60 秒，记录真实生活中的修复时刻。</p>
+          <div class="vcard-foot">
+            <span class="cat">社区共创</span>
+            <span class="views"><svg viewBox="0 0 24 24"><path d="M12 5c-5 0-9 4.5-9 7s4 7 9 7 9-4.5 9-7-4-7-9-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg>15.2万</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="vcard reveal d2" data-cat="breath">
+        <div class="vcard-thumb">
+          <svg viewBox="0 0 400 250" role="img" aria-label="雨天窗边 封面">
+            <defs>
+              <linearGradient id="c6a" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#142433"/><stop offset="100%" stop-color="#070c12"/></linearGradient>
+            </defs>
+            <rect width="400" height="250" fill="url(#c6a)"/>
+            <rect x="46" y="30" width="140" height="170" rx="6" fill="#0b1620" stroke="#2bb8ac" stroke-opacity=".45" stroke-width="1.6"/>
+            <line x1="116" y1="30" x2="116" y2="200" stroke="#2bb8ac" stroke-opacity=".3" stroke-width="1.2"/>
+            <line x1="46" y1="118" x2="186" y2="118" stroke="#2bb8ac" stroke-opacity=".3" stroke-width="1.2"/>
+            <g stroke="#bdf7f0" stroke-opacity=".45" stroke-linecap="round" stroke-width="1.4">
+              <line x1="66" y1="52" x2="60" y2="72"/><line x1="94" y1="64" x2="88" y2="88"/><line x1="140" y1="44" x2="134" y2="68"/>
+              <line x1="74" y1="136" x2="68" y2="160"/><line x1="156" y1="146" x2="150" y2="172"/><line x1="128" y1="160" x2="122" y2="184"/>
+            </g>
+            <rect x="220" y="52" width="140" height="120" rx="6" fill="#0d1a22" stroke="#7b8cff" stroke-opacity=".32" stroke-width="1.4"/>
+            <circle cx="290" cy="112" r="26" fill="#7b8cff" opacity=".28"/>
+            <circle cx="290" cy="112" r="12" fill="#c3caff" opacity=".85"/>
+            <g fill="#bdf7f0" opacity=".35"><circle cx="252" cy="76" r="1"/><circle cx="332" cy="82" r="1"/><circle cx="322" cy="148" r="1"/></g>
+            <path d="M0 216 h400" stroke="#4ee0d0" stroke-opacity=".22" stroke-width="1.2"/>
+            <ellipse cx="200" cy="228" rx="150" ry="9" fill="#4ee0d0" opacity=".07"/>
+          </svg>
+          <span class="vcard-flag v3">新片</span>
+          <span class="vcard-time">15:00</span>
+        </div>
+        <div class="vcard-body">
+          <h3 class="vcard-title">雨天窗边 · 白噪音</h3>
+          <p class="vcard-desc">雨滴敲窗的真实采样，配合缓慢移动的窗景。适合阅读、写作与午后小憩。</p>
+          <div class="vcard-foot">
+            <span class="cat">呼吸冥想</span>
+            <span class="views"><svg viewBox="0 0 24 24"><path d="M12 5c-5 0-9 4.5-9 7s4 7 9 7 9-4.5 9-7-4-7-9-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg>22.4万</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="more-wrap reveal">
+      <a href="#plans" class="btn btn-ghost">
+        查看全部 1280+ 影像
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 6l6 6-6 6z"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 数据统计 ============ -->
+<section class="metrics">
+  <div class="wrap">
+    <div class="metrics-grid reveal">
+      <div class="metric">
+        <div class="metric-num" data-count="1280">0<em>+</em></div>
+        <div class="metric-label">疗愈影像作品</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num" data-count="96">0<em>万</em></div>
+        <div class="metric-label">累计观看人次</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num" data-count="182">0<em>个</em></div>
+        <div class="metric-label">自然声场采集地</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num" data-count="52">0<em>万</em></div>
+        <div class="metric-label">社区成员共创</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 品牌理念 ============ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <svg viewBox="0 0 520 560" role="img" aria-label="自愈抠桨mv在线看免费版 品牌视觉">
+          <defs>
+            <linearGradient id="av-bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#14232e"/><stop offset="55%" stop-color="#0c1720"/><stop offset="100%" stop-color="#070b10"/>
+            </linearGradient>
+            <linearGradient id="av-ring" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#4ee0d0"/><stop offset="50%" stop-color="#7b8cff"/><stop offset="100%" stop-color="#ff8f7a"/>
+            </linearGradient>
+            <radialGradient id="av-glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#4ee0d0" stop-opacity=".42"/>
+              <stop offset="100%" stop-color="#4ee0d0" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="520" height="560" fill="url(#av-bg)"/>
+          <g opacity=".5" stroke="rgba(120,200,210,.1)">
+            <line x1="0" y1="140" x2="520" y2="140"/><line x1="0" y1="280" x2="520" y2="280"/><line x1="0" y1="420" x2="520" y2="420"/>
+            <line x1="130" y1="0" x2="130" y2="560"/><line x1="260" y1="0" x2="260" y2="560"/><line x1="390" y1="0" x2="390" y2="560"/>
+          </g>
+          <circle cx="260" cy="256" r="180" fill="url(#av-glow)"/>
+          <circle cx="260" cy="256" r="126" fill="none" stroke="url(#av-ring)" stroke-width="1.6" stroke-dasharray="6 10" opacity=".9"/>
+          <circle cx="260" cy="256" r="96" fill="none" stroke="#4ee0d0" stroke-opacity=".34" stroke-width="1"/>
+          <circle cx="260" cy="256" r="150" fill="none" stroke="#7b8cff" stroke-opacity=".18" stroke-width="1"/>
+          <!-- 桨 -->
+          <g stroke-linecap="round">
+            <line x1="176" y1="352" x2="340" y2="168" stroke="#e8f1f4" stroke-opacity=".82" stroke-width="5"/>
+            <path d="M340 168 q26 -24 40 -16 q-6 20 -30 30 q-10 4 -10 -14 Z" fill="#4ee0d0" fill-opacity=".9"/>
+            <path d="M176 352 q-26 24 -40 16 q6 -20 30 -30 q10 -4 10 14 Z" fill="#8dffd9" fill-opacity=".75"/>
+          </g>
+          <!-- 心形波纹 -->
+          <path d="M260 300 c-22 -30 -66 -14 -66 20 c0 32 44 52 66 74 c22 -22 66 -42 66 -74 c0 -34 -44 -50 -66 -20 Z" fill="none" stroke="#4ee0d0" stroke-opacity=".55" stroke-width="1.6"/>
+          <circle cx="260" cy="256" r="9" fill="#bdf7f0"/>
+          <g fill="#bdf7f0" opacity=".55">
+            <circle cx="92" cy="80" r="2"/><circle cx="430" cy="112" r="1.6"/><circle cx="404" cy="440" r="2"/><circle cx="118" cy="466" r="1.6"/><circle cx="360" cy="52" r="1.4"/>
+          </g>
+          <g font-family="monospace" fill="#4ee0d0" opacity=".55" font-size="11" letter-spacing="3">
+            <text x="40" y="524">HEALING · FRAME · 001</text>
+            <text x="376" y="44">∞</text>
+          </g>
+        </svg>
+        <div class="about-float">
+          <span class="ico">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.6-7-10a4.5 4.5 0 0 1 7-3.7A4.5 4.5 0 0 1 19 11c0 5.4-7 10-7 10z"/></svg>
+          </span>
+          <div>
+            <strong>以影像为药，以声音为引</strong>
+            <span>让观看成为一次温柔的内在修复</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-copy reveal d1">
+        <span class="eyebrow">Our Philosophy</span>
+        <h2 class="section-title">我们相信，<em>安静本身就有力量</em></h2>
+        <p><strong>自愈抠桨mv在线看免费版</strong> 不是一个追求刺激的短视频平台。我们反其道而行：更长的镜头、更慢的节奏、更克制的声音设计，让画面给情绪留出空间。</p>
+        <p>每一部作品都经过声画双轨校准——从外景采集到后期混音，我们尽量保留环境里那些容易被忽略的细节：桨叶入水的闷响、风穿过枝丫的摩擦、远处水鸟掠过的一次振翅。</p>
+        <p>我们同时开放社区共创通道，任何人都可以投递自己的「自愈瞬间」，经过编辑后进入影像库，与数十万观众一起被看见。</p>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <div class="fi-top">
+              <span class="fi-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v10H4zM9 19h6M12 15v4"/></svg></span>
+              <h4>高清音画</h4>
+            </div>
+            <p>支持 4K 画质与无损音轨，细节清晰，长时间观看不疲劳。</p>
+          </div>
+          <div class="feature-item">
+            <div class="fi-top">
+              <span class="fi-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9h-9z"/></svg></span>
+              <h4>纯净无扰</h4>
+            </div>
+            <p>片头零广告、零弹窗，进入即播放，把注意力完整交还给你。</p>
+          </div>
+          <div class="feature-item">
+            <div class="fi-top">
+              <span class="fi-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 7h7l-5.6 4.3 2.1 7.2L12 16.8 5.5 20.5l2.1-7.2L2 9h7z"/></svg></span>
+              <h4>严选片单</h4>
+            </div>
+            <p>由编辑团队人工筛选，按情绪与场景分类，拒绝无效信息。</p>
+          </div>
+          <div class="feature-item">
+            <div class="fi-top">
+              <span class="fi-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v3a5 5 0 0 1-10 0V4zm0 14h10v2H7z"/></svg></span>
+              <h4>社区共创</h4>
+            </div>
+            <p>开放投稿与共创计划，让你的影像成为他人疗愈的一部分。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 社区 ============ -->
+<section class="section section--tight" id="community">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Community Pulse</span>
+        <h2 class="section-title">社区正在发生 <em>· 真实的观看回响</em></h2>
+      </div>
+      <p class="section-desc">每天的讨论、投稿与留言，构成了这个品牌另一半的生命力。这里没有争吵，只有彼此听见。</p>
+    </div>
+
+    <div class="community-grid">
+      <div class="panel reveal">
+        <div class="panel-title">
+          <h3>本周热议话题</h3>
+          <a href="#library" class="link">更多讨论 <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6z"/></svg></a>
+        </div>
+        <div class="topic-list">
+          <div class="topic-item">
+            <span class="topic-rank">01</span>
+            <div class="topic-main">
+              <h4># 你心中的自愈瞬间是什么样子</h4>
+              <p>1,428 条讨论 · 3.2 万人参与</p>
+            </div>
+            <span class="topic-heat"><i></i>HOT</span>
+          </div>
+          <div class="topic-item">
+            <span class="topic-rank">02</span>
+            <div class="topic-main">
+              <h4># 桨声入静第二集取景地竞猜</h4>
+              <p>856 条讨论 · 1.9 万人参与</p>
+            </div>
+            <span class="topic-heat"><i></i>HOT</span>
+          </div>
+          <div class="topic-item">
+            <span class="topic-rank">03</span>
+            <div class="topic-main">
+              <h4># 睡前十分钟呼吸练习打卡</h4>
+              <p>2,306 条讨论 · 4.7 万人参与</p>
+            </div>
+            <span class="topic-heat"><i></i>HOT</span>
+          </div>
+          <div class="topic-item">
+            <span class="topic-rank">04</span>
+            <div class="topic-main">
+              <h4># 社区共创投稿指南与拍摄心得</h4>
+              <p>612 条讨论 · 1.1 万人参与</p>
+            </div>
+            <span class="topic-heat">活跃</span>
+          </div>
+          <div class="topic-item">
+            <span class="topic-rank">05</span>
+            <div class="topic-main">
+              <h4># 雨天窗边白噪音适合做什么</h4>
+              <p>498 条讨论 · 9,240 人参与</p>
+            </div>
+            <span class="topic-heat">活跃</span>
+          </div>
+          <div class="topic-item">
+            <span class="topic-rank">06</span>
+            <div class="topic-main">
+              <h4># 城市夜行系列下一站去哪拍</h4>
+              <p>374 条讨论 · 7,806 人参与</p>
+            </div>
+            <span class="topic-heat">活跃</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel reveal d1">
+        <div class="panel-title">
+          <h3>最新留言</h3>
+          <a href="#plans" class="link">加入社区 <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6z"/></svg></a>
+        </div>
+        <div class="comment-list" id="commentList">
+          <div class="comment">
+            <span class="avatar a1">林</span>
+            <div class="comment-body">
+              <div class="comment-head"><b>林间慢行</b><span>3 分钟前</span></div>
+              <p>昨晚看了《四次呼吸》，跟着引导做了一轮，躺下不到十分钟就睡着了。<em>真的有用。</em></p>
+              <button class="like-btn" aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-7-10a4.5 4.5 0 0 1 7-3.7A4.5 4.5 0 0 1 19 11c0 5.4-7 10-7 10z"/></svg><span>238</span></button>
+            </div>
+          </div>
+          <div class="comment">
+            <span class="avatar a2">周</span>
+            <div class="comment-body">
+              <div class="comment-head"><b>周舟不摆渡</b><span>18 分钟前</span></div>
+              <p>桨声入静里的水声太干净了，戴耳机感觉人直接坐在船上。<em>希望多出几集。</em></p>
+              <button class="like-btn" aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-7-10a4.5 4.5 0 0 1 7-3.7A4.5 4.5 0 0 1 19 11c0 5.4-7 10-7 10z"/></svg><span>176</span></button>
+            </div>
+          </div>
+          <div class="comment">
+            <span class="avatar a3">一</span>
+            <div class="comment-body">
+              <div class="comment-head"><b>一只慢乌龟</b><span>42 分钟前</span></div>
+              <p>把城市夜行投屏到电视上，关灯看，整个房间都安静下来了。<em>感谢免费版。</em></p>
+              <button class="like-btn" aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-7-10a4.5 4.5 0 0 1 7-3.7A4.5 4.5 0 0 1 19 11c0 5.4-7 10-7 10z"/></svg><span>309</span></button>
+            </div>
+          </div>
+          <div class="comment">
+            <span class="avatar a4">南</span>
+            <div class="comment-body">
+              <div class="comment-head"><b>南山有雾</b><span>1 小时前</span></div>
+              <p>投了三次稿终于被选进共创合集，看到自己的片段出现在片单里，<em>有点想哭。</em></p>
+              <button class="like-btn" aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-7-10a4.5 4.5 0 0 1 7-3.7A4.5 4.5 0 0 1 19 11c0 5.4-7 10-7 10z"/></svg><span>452</span></button>
+            </div>
+          </div>
+          <div class="comment">
+            <span class="avatar a5">海</span>
+            <div class="comment-body">
+              <div class="comment-head"><b>海边的卡夫卡</b><span>2 小时前</span></div>
+              <p>雨天窗边那期真的绝，一边写方案一边放着，<em>效率反而高了。</em></p>
+              <button class="like-btn" aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-7-10a4.5 4.5 0 0 1 7-3.7A4.5 4.5 0 0 1 19 11c0 5.4-7 10-7 10z"/></svg><span>143</span></button>
+            </div>
+          </div>
+          <div class="comment">
+            <span class="avatar a1">柚</span>
+            <div class="comment-body">
+              <div class="comment-head"><b>柚子汽水</b><span>3 小时前</span></div>
+              <p>建议增加一个「随机播放」按钮，每次不知道看什么都靠它。<em>已经安利给室友了。</em></p>
+              <button class="like-btn" aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-7-10a4.5 4.5 0 0 1 7-3.7A4.5 4.5 0 0 1 19 11c0 5.4-7 10-7 10z"/></svg><span>97</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 会员套餐 ============ -->
+<section class="section" id="plans">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Membership</span>
+        <h2 class="section-title">选择你的观看方式 <em>· 免费也能看得很完整</em></h2>
+      </div>
+      <p class="section-desc">免费版已包含全部常规影像与社区功能；如果你需要更高画质、更多离线片源与优先共创通道，可以选择会员计划。</p>
+    </div>
+
+    <div class="plan-grid">
+      <div class="plan reveal">
+        <h3>免费版</h3>
+        <p class="plan-sub">无需注册，打开即看</p>
+        <div class="plan-price"><span class="cur">¥</span><span class="num">0</span><span class="unit">/ 永久</span></div>
+        <p class="plan-note">适合轻度观看与初次体验</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>全部常规影像免费在线观看</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>1080P 高清画质</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>零广告纯净播放</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>社区讨论与留言</li>
+        </ul>
+        <a href="#library" class="btn btn-ghost">直接观看</a>
+      </div>
+
+      <div class="plan featured reveal d1">
+        <span class="plan-badge">最受欢迎</span>
+        <h3>疗愈会员</h3>
+        <p class="plan-sub">深度观看者的日常选择</p>
+        <div class="plan-price"><span class="cur">¥</span><span class="num">29</span><span class="unit">/ 月</span></div>
+        <p class="plan-note">支持随时取消，首月可体验</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>包含免费版全部权益</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>4K 超高清 + 无损音质</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>会员专属片源与提前点映</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>离线缓存，通勤路上也能看</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>共创投稿优先审核通道</li>
+        </ul>
+        <a href="#cta" class="btn btn-primary">开通会员</a>
+      </div>
+
+      <div class="plan reveal d2">
+        <h3>年度通行</h3>
+        <p class="plan-sub">长期陪伴，性价比更高</p>
+        <div class="plan-price"><span class="cur">¥</span><span class="num">199</span><span class="unit">/ 年</span></div>
+        <p class="plan-note">相当于每月约 16.6 元</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>包含疗愈会员全部权益</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>全年 12 期主题片单优先看</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>线下聆听会优先报名</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>年度共创纪念影像册</li>
+        </ul>
+        <a href="#cta" class="btn btn-ghost">了解详情</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section--tight" id="faq">
+  <div class="wrap">
+    <div class="section-head reveal" style="justify-content:center;text-align:center;flex-direction:column;align-items:center;gap:14px">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="section-title">关于观看的 <em>常见问题</em></h2>
+      <p class="section-desc" style="max-width:560px">如果你还有别的疑问，欢迎在社区留言，我们会定期整理并回复。</p>
+    </div>
+
+    <div class="faq-list" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          自愈抠桨mv在线看免费版真的完全免费吗？
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg></span>
+        </button>
+        <div class="faq-a"><p>是的。免费版包含全部常规影像的在线观看权限，画质为 1080P，片头无广告、无弹窗。只有 4K 超高清、无损音轨、离线缓存与会员专属片源属于付费权益，免费版并不影响你完整地观看大部分内容。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          观看需要注册账号吗？
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg></span>
+        </button>
+        <div class="faq-a"><p>观看本身无需注册，打开页面即可播放。如果你希望收藏片单、参与社区讨论、投稿共创作品或管理会员权益，则需要创建一个轻量账号，仅需邮箱即可完成。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          支持哪些设备与浏览器？
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg></span>
+        </button>
+        <div class="faq-a"><p>页面适配桌面端与移动端主流浏览器，包括 Chrome、Edge、Safari、Firefox 以及各大手机内置浏览器。也支持投屏到电视与投影设备，建议在稳定网络环境下观看 4K 片源。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          影像内容会定期更新吗？
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg></span>
+        </button>
+        <div class="faq-a"><p>会。我们保持每周至少更新两期常规影像，每月推出一期主题片单，每季度完成一次大型自然声场采集。会员可以提前看到部分新片，社区共创合集则根据投稿质量不定期上线。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          如何参与社区共创投稿？
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg></span>
+        </button>
+        <div class="faq-a"><p>登录账号后进入社区页面，点击「我要投稿」，上传不超过 60 秒的原创影像并填写简短说明即可。编辑团队会在 7 个工作日内完成审核，入选作品将进入共创合集，并标注创作者署名。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          会员可以随时取消吗？
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M11 5h2v14h-2z"/><path d="M5 11h14v2H5z"/></svg></span>
+        </button>
+        <div class="faq-a"><p>可以。会员计划支持随时取消，取消后当前计费周期内仍可正常使用全部权益，到期后自动转为免费版，不会产生额外扣费。年度通行同样支持取消续费。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section section--tight" id="cta">
+  <div class="wrap">
+    <div class="cta-banner reveal">
+      <h2>给自己十分钟，<br class="hide-sm">让画面替你呼吸</h2>
+      <p>现在打开任意一部影像，戴上耳机，调暗灯光。自愈抠桨mv在线看免费版，随时在这里等你回来。</p>
+      <div class="hero-cta">
+        <a href="#library" class="btn btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          立即免费观看
+        </a>
+        <a href="#community" class="btn btn-ghost">加入社区</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <span class="brand-mark">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.4c2.6 3.2 6.2 5.4 6.2 9.6A6.2 6.2 0 0 1 12 18.2a6.2 6.2 0 0 1-6.2-6.2c0-4.2 3.6-6.4 6.2-9.6Z" fill="#4ee0d0"/>
+              <path d="M12 21.6v-3.4" stroke="#8dffd9" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">自愈抠桨 MV</span>
+            <span class="brand-sub">Healing Frames</span>
+          </span>
+        </a>
+        <p>以影像与声音为媒介的心灵疗愈视频品牌。我们做慢一点的内容，也相信慢一点的生活值得被记录。</p>
+        <div class="footer-social">
+          <a href="#top" aria-label="微博"><svg viewBox="0 0 24 24"><path d="M10 18a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm9-9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg></a>
+          <a href="#top" aria-label="微信"><svg viewBox="0 0 24 24"><path d="M4 6h16v10H8l-4 3z"/></svg></a>
+          <a href="#top" aria-label="视频号"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM10 9l5 3-5 3z"/></svg></a>
+          <a href="#top" aria-label="邮件"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3zm0 0l9 7 9-7"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>观看</h4>
+        <ul>
+          <li><a href="#library">全部影像</a></li>
+          <li><a href="#library">自然疗愈</a></li>
+          <li><a href="#library">呼吸冥想</a></li>
+          <li><a href="#library">城市夜行</a></li>
+          <li><a href="#library">社区共创</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#about">品牌理念</a></li>
+          <li><a href="#community">社区动态</a></li>
+          <li><a href="#plans">会员计划</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#cta">合作联系</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>支持</h4>
+        <ul>
+          <li><a href="#faq">观看帮助</a></li>
+          <li><a href="#faq">设备适配</a></li>
+          <li><a href="#community">投稿指南</a></li>
+          <li><a href="#plans">订阅管理</a></li>
+          <li><a href="#top">反馈建议</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="mono">© 2025 自愈抠桨mv在线看免费版 · HEALING FRAMES</span>
+      <div class="links">
+        <a href="#top">隐私政策</a>
+        <a href="#top">用户协议</a>
+        <a href="#top">内容声明</a>
+        <a href="#top">版权联系</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 导航滚动状态 ---------- */
+  var nav = document.getElementById('nav');
+  var onScrollNav = function(){
+    if(window.scrollY > 24){ nav.classList.add('is-scrolled'); }
+    else { nav.classList.remove('is-scrolled'); }
+  };
+  window.addEventListener('scroll', onScrollNav, {passive:true});
+  onScrollNav();
+
+  /* ---------- 移动端菜单 ---------- */
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    navToggle.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    navToggle.setAttribute('aria-label', open ? '关闭菜单' : '打开菜单');
+  });
+  navLinks.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('is-open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* ---------- 滚动进度条 ---------- */
+  var progress = document.getElementById('scrollProgress');
+  var updateProgress = function(){
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    var p = h > 0 ? (window.scrollY / h) * 100 : 0;
+    progress.style.width = p.toFixed(2) + '%';
+  };
+  window.addEventListener('scroll', updateProgress, {passive:true});
+  window.addEventListener('resize', updateProgress);
+  updateProgress();
+
+  /* ---------- 滚动入场动画 ---------- */
+  var revealEls = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = Array.prototype.slice.call(document.querySelectorAll('[data-count]'));
+  var animateCount = function(el){
+    var target = parseFloat(el.getAttribute('data-count'));
+    var isFloat = String(target).indexOf('.') > -1 && target % 1 !== 0;
+    var suffixEl = el.querySelector('span') || el.querySelector('em');
+    var suffixHTML = suffixEl ? suffixEl.outerHTML : '';
+    var duration = 1600;
+    var startTime = null;
+    var step = function(ts){
+      if(!startTime) startTime = ts;
+      var t = Math.min((ts - startTime) / duration, 1);
+      var eased = 1 - Math.pow(1 - t, 3);
+      var current = target * eased;
+      var text;
+      if(isFloat){ text = current.toFixed(1); }
+      else { text = Math.round(current).toLocaleString('en-US'); }
+      el.innerHTML = text + suffixHTML;
+      if(t < 1){ requestAnimationFrame(step); }
+      else {
+        var finalText = isFloat ? target.toFixed(1) : Math.round(target).toLocaleString('en-US');
+        el.innerHTML = finalText + suffixHTML;
+      }
+    };
+    requestAnimationFrame(step);
+  };
+  if('IntersectionObserver' in window){
+    var cio = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          animateCount(entry.target);
+          cio.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.5});
+    counters.forEach(function(el){ cio.observe(el); });
+  } else {
+    counters.forEach(animateCount);
+  }
+
+  /* ---------- 跑马灯复制（无缝滚动） ---------- */
+  var track = document.getElementById('marqueeTrack');
+  if(track){
+    track.innerHTML = track.innerHTML + track.innerHTML;
+  }
+
+  /* ---------- 影像库筛选 ---------- */
+  var filterBar = document.getElementById('filterBar');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#cardGrid .vcard'));
+  if(filterBar){
+    filterBar.addEventListener('click', function(e){
+      var btn = e.target.closest('.filter-btn');
+      if(!btn) return;
+      Array.prototype.forEach.call(filterBar.querySelectorAll('.filter-btn'), function(b){
+        b.classList.remove('active');
+      });
+      btn.classList.add('active');
+      var f = btn.getAttribute('data-filter');
+      cards.forEach(function(card){
+        var cat = card.getAttribute('data-cat');
+        var show = (f === 'all' || cat === f);
+        if(show){
+          card.style.display = '';
+          card.classList.add('in');
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  }
+
+  /* ---------- 点赞交互 ---------- */
+  document.querySelectorAll('.like-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var span = btn.querySelector('span');
+      var num = parseInt(span.textContent.replace(/[^\d]/g,''), 10) || 0;
+      var liked = btn.classList.toggle('liked');
+      span.textContent = liked ? (num + 1) : Math.max(0, num - 1);
+    });
+  });
+
+  /* ---------- FAQ 手风琴 ---------- */
+  var faqList = document.getElementById('faqList');
+  if(faqList){
+    faqList.querySelectorAll('.faq-q').forEach(function(q){
+      q.addEventListener('click', function(){
+        var item = q.parentElement;
+        var answer = item.querySelector('.faq-a');
+        var isOpen = item.classList.contains('open');
+
+        faqList.querySelectorAll('.faq-item').forEach(function(it){
+          it.classList.remove('open');
+          var a = it.querySelector('.faq-a');
+          if(a) a.style.maxHeight = '0px';
+          var qb = it.querySelector('.faq-q');
+          if(qb) qb.setAttribute('aria-expanded','false');
+        });
+
+        if(!isOpen){
+          item.classList.add('open');
+          answer.style.maxHeight = answer.scrollHeight + 40 + 'px';
+          q.setAttribute('aria-expanded','true');
+        }
+      });
+    });
+  }
+
+  /* ---------- 播放按钮演示反馈 ---------- */
+  var playBtn = document.querySelector('.player-play');
+  if(playBtn){
+    playBtn.addEventListener('click', function(){
+      playBtn.style.transform = 'translate(-50%,-50%) scale(.88)';
+      setTimeout(function(){ playBtn.style.transform = ''; }, 260);
+    });
+  }
+
+  /* ---------- 平滑锚点（补偿固定导航高度） ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href');
+      if(id.length < 2) return;
+      var target = document.querySelector(id);
+      if(!target) return;
+      e.preventDefault();
+      var offset = 84;
+      var top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({top: top, behavior: 'smooth'});
+    });
+  });
+
+  /* ---------- 首屏静默轻微视差 ---------- */
+  var playerCard = document.querySelector('.player-card');
+  if(playerCard && window.matchMedia('(min-width: 1081px)').matches){
+    var raf = null;
+    window.addEventListener('mousemove', function(e){
+      if(raf) return;
+      raf = requestAnimationFrame(function(){
+        var cx = window.innerWidth / 2;
+        var cy = window.innerHeight / 2;
+        var dx = (e.clientX - cx) / cx;
+        var dy = (e.clientY - cy) / cy;
+        playerCard.style.transform =
+          'perspective(1400px) rotateY(' + (-4 + dx * 3) + 'deg) rotateX(' + (2 - dy * 2) + 'deg)';
+        raf = null;
+      });
+    });
+    playerCard.addEventListener('mouseleave', function(){
+      playerCard.style.transform = 'perspective(1400px) rotateY(-4deg) rotateX(2deg)';
+    });
+  }
+
+})();
+</script>
+</body>
+                </html>
